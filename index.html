@@ -17,6 +17,7 @@
     <meta name="twitter:title" content="Design Education Series">
     <meta name="twitter:description" content="Learn design principles, tools, and best practices">
     <title>Design Education Series</title>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
     <link rel="stylesheet" href="tailwind.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,7 +26,7 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <header class="flex w-[100vw] h-[100vh]">
+    <header class="flex">
         <div class="flex items-start gap-[-3px] w-[50vw] px-9 py-8">
             <svg xmlns="http://www.w3.org/2000/svg" width="250" height="300" fill="none" viewBox="0 0 174 210"
                 data-letter="d"
@@ -56,7 +57,7 @@
                 <h2 class="text-[30px] font-medium">Design Education Series® by Obys®</h2>
             </span>
         </div>
-        <div class="right w-[50vw] h-[120vh] border-l-[1px] border-black">
+        <div data-animation="fade" class="scroll-container w-[50vw] h-[120vh] border-l-[1px] border-black">
             <nav class="flex items-center justify-between px-9 py-4 border-b border-black">
                 <div class="nav-left flex items-center">
                     <ul class="flex gap-7 items-center">
@@ -136,8 +137,15 @@
             </section>
         </div>
     </header>
+    <section class="border-t border-black">
+        <div>
+            <span class="w-[50%]">(About Series)</span>
+            <h1 class="flex text-[3vw] leading-[60px]"><svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.5799 11.815H23.1799V29.625H20.1119V16.677C19.3059 17.509 17.9279 17.821 16.4979 17.821C16.2379 17.821 15.9779 17.795 15.7439 17.769V15.065C18.6039 15.065 20.1639 14.077 20.5799 11.815Z" fill="currentColor"></path><circle cx="20.5" cy="20.5" r="18.5" stroke="currentColor" stroke-width="4"></circle></svg> (About Series) Design Education Series is a new format of an original mini-series on the main principles of design, where we share all insights gained during our experience at Obys Agency. Typography Principles, Colors Combinations, Grids are the titles of the first three seasons of the series.</h1>
+        </div>
+    </section>
 
 
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script> 
     <script src="script.js"></script>
 </body>
 
